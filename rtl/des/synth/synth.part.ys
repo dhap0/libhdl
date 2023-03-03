@@ -1,0 +1,5 @@
+hierarchy -top des
+write_ilang
+proc; opt
+synth
+shell

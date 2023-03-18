@@ -36,7 +36,7 @@ module des_feistel(input  logic [31:0] left_i,
     //expand right
     genvar i;
     generate
-        for (i = 0; i < 47; i++) begin
+        for (i = 0; i < 48; i++) begin
             assign expand_t[47-i] = right_i[E[i]-1];
         end
     endgenerate
@@ -51,7 +51,7 @@ module des_feistel(input  logic [31:0] left_i,
     //permute sboxed
     genvar j;
     generate
-        for (j = 0; j < 31; j++) begin
+        for (j = 0; j < 32; j++) begin
             assign permuted_t[31-j] = sboxed_t[P[j]-1];
         end
     endgenerate

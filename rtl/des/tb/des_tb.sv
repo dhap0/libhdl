@@ -17,7 +17,7 @@ module des_tb;
 
   // Run test case 1
   initial begin 
-    $dumpfile("dump.vcd");
+    $dumpfile("tb/dump");
     $dumpvars(0, dut);
 
     block_i = test_vector_1;
